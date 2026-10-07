@@ -1,6 +1,37 @@
+@import url('https://googleapis.com');
+
 :root {
   color-scheme: light dark;
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+}
+
+.contact {
+  margin-left: auto;
+}
+
+.introduction {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/metal-home.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  padding: 80px 40px;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+}
+
 body {
-  background-color: yellow;
+  /* Hex codes prevent light-dark() parser crashes */
+  background-color: light-dark(#8B4513, #808080); 
+  font-family: 'Inter';
+  display: block;
 }
