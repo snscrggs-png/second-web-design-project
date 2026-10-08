@@ -33,5 +33,17 @@ body {
   /* Hex codes prevent light-dark() parser crashes */
   background-color: light-dark(#8B4513, #808080); 
   font-family: 'Inter';
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.text-box {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.5;
+
 }
