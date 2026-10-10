@@ -4,14 +4,24 @@
   color-scheme: light dark;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 nav {
   display: flex;
   flex-direction: row;
+  position: fixed;
+  width: 100%;
+  background-color: grey;
 }
 
 nav a {
   display: inline-block;
   padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 .contact {
@@ -46,4 +56,19 @@ body {
   text-align: center;
   line-height: 2.5;
 
+}
+
+.orange-button {
+  background-color: orange;
+  bottom: 0px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  line-height: 20 8px;
+  font-size: inherit;
+  font-weight: 800;
+  box-sizing: border-box;
+  padding: 5px;
 }
