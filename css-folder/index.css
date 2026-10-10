@@ -14,7 +14,7 @@ nav {
   flex-direction: row;
   position: fixed;
   width: 100%;
-  background-color: grey;
+  background-color: #1f1f1f;
 }
 
 nav a {
@@ -41,12 +41,16 @@ nav a {
 
 body {
   /* Hex codes prevent light-dark() parser crashes */
-  background-color: light-dark(#8B4513, #808080); 
+  background-color: light-dark(#8B4513, #1f1f1f); 
   font-family: 'Inter';
   display: flex;
   flex-direction: column;
   align-content: center;
   text-align: center;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 .text-box {
@@ -58,8 +62,8 @@ body {
 
 }
 
-.orange-button {
-  background-color: orange;
+.green-button {
+  background-color: #1B3624;
   bottom: 0px;
   box-sizing: border-box;
   color: white;
@@ -71,4 +75,33 @@ body {
   font-weight: 800;
   box-sizing: border-box;
   padding: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.number-bubble {
+  background-color: #1B3624;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
 }
