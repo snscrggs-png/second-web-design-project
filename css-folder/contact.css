@@ -1,0 +1,122 @@
+@import url('https://googleapis.com');
+
+:root {
+  color-scheme: light dark;
+  font-family: 'Inter';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  width: 100%;
+  background-color: #1f1f1f;
+}
+
+nav a {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.contact {
+  margin-left: auto;
+}
+.contact-info {
+  padding-top: 3em;
+}
+
+
+.introduction {
+  padding-top: 5em;
+}
+
+body {
+  /* Hex codes prevent light-dark() parser crashes */
+  background-color: light-dark(#8B4513, #1f1f1f); 
+  font-family: 'Inter';
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.text-box {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2.5;
+
+}
+
+.green-button {
+  background-color: #1B3624;
+  bottom: 0px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  line-height: 20 8px;
+  font-size: inherit;
+  font-weight: 800;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.number-bubble {
+  background-color: #1B3624;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.project-container img {
+  max-width: 75%;
+  height: auto;
+}
+
+.final-stop {
+  margin-bottom: 10%;
+}
