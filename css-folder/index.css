@@ -105,3 +105,20 @@ h4 {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.project-container img {
+  max-width: 75%;
+  height: auto;
+}
+
+.final-stop {
+  margin-bottom: 10%;
+}
