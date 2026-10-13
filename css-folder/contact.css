@@ -25,16 +25,52 @@ nav a {
   font-weight: 700;
 }
 
+fieldset {
+  padding: 0;
+  margin: 0 0 24px 0;
+  width: 100%;
+  align-items: center;
+  border: none;
+}
+
+fieldset.form-columns-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+fieldset.form-columns-3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: px solid #222222;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
 .contact {
   margin-left: auto;
 }
 .contact-info {
-  padding-top: 3em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
 }
 
 
 .introduction {
   padding-top: 5em;
+  align-item: left;
 }
 
 body {
@@ -104,12 +140,21 @@ h4 {
   margin-bottom: 20px;
 }
 
-.project-container {
+.project-type-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: center;
-  text-align: center;
+  text-align: left;
+  padding: 20px;
+}
+
+textarea {
+  min-width: 75%;
+  height: 80px;
+}
+
+label, textarea {
+  display: block;
 }
 
 .project-container img {
