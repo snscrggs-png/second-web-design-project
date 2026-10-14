@@ -95,6 +95,65 @@
   <label for='project-details'>Project Description</label>
     <textarea id='project-details'></textarea>
   </div>
+
+  <div class='project-questions'>
+
+    <div class='form-group'>
+      <label class='form-label'>Have you done a Home building project before?</label>
+      <div class='radio-group'>
+        <label><input type='radio' name='remodel_before' value='yes'>Yes</label>
+      <label><input type='radio' name='remodel_before' value='no'>No</label>
+      </div>
+
+    <div class='radio-group'>
+        <label class='form-label'>Will you need design services?<input type='radio' name='design-services' value='yes'>Yes</label>
+      <label><input type='radio' name='design-services' value='no'>No</label>
+
+    <div class='radio-group'>
+        <label class='form-label'>What year was your home built?<input type='number' name='year-built'></label>
+      </div>      
+
+    <div class='radio-group'>
+        <label class='form-label'>When would you like to start your project?<input type='date'></label>
+      </div>   
+      
+    <div class='radio-group'>
+        <label class='form-label'>Budget <select name='something' >
+          <option value="">--You better Select something--</option>
+          <option value="10k-25k">10k-25k</option>
+          <option value='25k-50k'>25k-25k</option>
+          <option value='50k-100k'>50k-100k</option>
+          <option value='100k-200k'>100k-200k</option>
+          <option value='200k-400k'>200k-400k</option>
+          <option value='600k +'>600k +</option>
+        </select>
+        </label>
+      </div>    
+      
+    <div class='radio-group'>
+        <label class='form-label'>How did you hear about us? * <select name='something' required>
+          <option value="">--You better Select something--</option>
+          <option value="referral">Referral</option>
+          <option value='previous-client'>Previous Client</option>
+          <option value='internet-search'>Internet Search</option>
+          <option value='jobsite/truck-sign'>Jobsite/Truck Sign</option>
+          <option value='advertisement/publication'>Advertisement/Publication</option>
+          <option value='social-media'>Social Media </option>
+          <option value='other'>Other</option>
+        </select>
+        </label>
+      </div>            
+
+      <div class='form-group'>
+        <label class='form-label'>Additional Infromation<textarea name='additional-information'></textarea>
+      </div>
+
+      <div class='form-group'>
+        <label class='form-label'>What is the best way to contact you? (Select all that apply) * <input type='radio' name='contact-input' value='phone-call'>Phone Call
+      </div>
+      
+
+  </div>
   </main>
     <script src='javascript-folder/contact.js'></script>
   </body>
