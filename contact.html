@@ -86,7 +86,6 @@
     </div>
   </fieldset>
 
-</form>
 
 
   </div>
@@ -94,9 +93,7 @@
   <div class='project-type-container'>
   <label for='project-details'>Project Description</label>
     <textarea id='project-details'></textarea>
-  </div>
 
-  <div class='project-questions'>
 
     <div class='form-group'>
       <label class='form-label'>Have you done a Home building project before?</label>
@@ -110,16 +107,16 @@
       <label><input type='radio' name='design-services' value='no'>No</label>
 
     <div class='radio-group'>
-        <label class='form-label'>What year was your home built?<input type='number' name='year-built'></label>
+        <label class='form-label'>What year was your home built?<input type='text' name='year-built'></label>
       </div>      
 
     <div class='radio-group'>
         <label class='form-label'>When would you like to start your project?<input type='date'></label>
       </div>   
       
-    <div class='radio-group'>
-        <label class='form-label'>Budget <select name='something' >
-          <option value="">--You better Select something--</option>
+    <div class='form-group'>
+        <label class='form-label'>Budget<select name='something' >
+          <option value="" disabled selected>--You better Select something--</option>
           <option value="10k-25k">10k-25k</option>
           <option value='25k-50k'>25k-25k</option>
           <option value='50k-100k'>50k-100k</option>
@@ -132,7 +129,7 @@
       
     <div class='radio-group'>
         <label class='form-label'>How did you hear about us? * <select name='something' required>
-          <option value="">--You better Select something--</option>
+          <option value="" disabled selected>--You better Select something--</option>
           <option value="referral">Referral</option>
           <option value='previous-client'>Previous Client</option>
           <option value='internet-search'>Internet Search</option>
@@ -150,10 +147,20 @@
 
       <div class='form-group'>
         <label class='form-label'>What is the best way to contact you? (Select all that apply) * <input type='radio' name='contact-input' value='phone-call'>Phone Call
+        <input type='radio' name='contact-input' value='text'>Text
+        <input type='radio' name='contact-input' value='email'>Email
+
+                <label class='form-label'>What is the best time to reach you? (Select all that apply) * <input type='radio' name='contact-input' value='phone-call'>8:00am - 10:00am
+        <input type='radio' name='contact-input' value='text'>10:00 - 4:00pm
+        <input type='radio' name='contact-input' value='email'>4:00pm - 8:00pm
+        </label>
       </div>
-      
+    </div>
 
   </div>
+</div>
+<button class='green-button final-stop' type='submit'>Submit Request</button>
+</form>
   </main>
     <script src='javascript-folder/contact.js'></script>
   </body>
