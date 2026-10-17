@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: #CCE6FF;
 }
 
 nav {
@@ -30,10 +31,11 @@ nav a {
 }
 
 .introduction {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/metal-home.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/interior.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%, contain;
   background-position: center;
+  background-color: #1f1f1f;
   min-height: 50vh;
   padding: 80px 40px;
   image-rendering: -webkit-optimize-contrast;
@@ -76,6 +78,7 @@ h4 {
   font-weight: 800;
   box-sizing: border-box;
   padding: 5px;
+  text-decoration: none;
 }
 
 .grid-container {
@@ -116,8 +119,11 @@ h4 {
 }
 
 .project-container img {
-  max-width: 75%;
+  width: 100%;
+  max-width: 600px;
   height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .final-stop {
