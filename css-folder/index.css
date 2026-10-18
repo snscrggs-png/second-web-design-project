@@ -1,8 +1,17 @@
 @import url('https://googleapis.com');
 
+/* PUT THIS AT THE VERY TOP OF YOUR STYLESHEET */
+body, p, span, div {
+    font-family: Helvetica;
+}
+
+/* Your original styles go down here... */
+.hero-section { }
+
+
 :root {
   color-scheme: light dark;
-  font-family: 'Inter'
+  font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -33,28 +42,28 @@ nav a {
 .introduction {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/interior.png');
   background-repeat: no-repeat;
-  background-size: 100% 100%, contain;
+  background-size: cover;
   background-position: center;
   background-color: #1f1f1f;
   min-height: 50vh;
   padding: 80px 40px;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: auto;
+
+  width: 100%;
+  box-sizing: border-box;
 }
 
 body {
   /* Hex codes prevent light-dark() parser crashes */
   background-color: light-dark(#8B4513, #1f1f1f); 
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif !important;
   display: flex;
   flex-direction: column;
-  align-content: center;
+  align-items: stretch;
   text-align: center;
 }
 
-h4 {
-  font-size: 1.2rem;
-}
 
 .text-box {
   max-width: 500px;
