@@ -16,3 +16,16 @@ form.addEventListener('submit', function(event) {
   alert("Thank you! Your submission has been captured.");
 
 })
+
+// Analytics Visit Counter
+document.addEventListener("DOMContentLoaded", () => {
+  const namespace = "my-mock-website-2026";
+  const key = "homepage-visits";
+
+  fetch(`https://countapi.xyz{namespace}/${key}`)
+    .then(res => res.json())
+    .then(data => {
+      console.log(`🚀 This page has been visited ${data.value} times!`);
+    })
+    .catch(err => console.error("Error tracking visit:", err));
+});
