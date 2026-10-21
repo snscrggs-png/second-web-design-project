@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  color: #CCE6FF;
 }
 
 nav {
@@ -45,10 +46,51 @@ fieldset.form-columns-3 {
   gap: 20px;
 }
 
+/* Ensure form groups step cleanly down the page with a 32px gap */
 .form-group {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 32px;
+  text-align: left;
+  width: 100%;
 }
+
+/* Force standard input dropdowns and fields to expand fully and evenly */
+select, input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #222222;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+/* Container for rows of checkboxes/radio options */
+.radio-options-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+/* Keep the radio/checkbox click target and the text perfectly aligned */
+.radio-option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: normal;
+}
+
+/* Overrides the global width rule for tiny toggle controls */
+.radio-option input[type="radio"],
+.radio-option input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
 
 input {
   border: px solid #222222;

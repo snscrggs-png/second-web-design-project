@@ -98,19 +98,21 @@
     <div class='form-group'>
       <label class='form-label'>Have you done a Home building project before?</label>
       <div class='radio-group'>
-        <label><input type='radio' name='remodel_before' value='yes'>Yes</label>
-      <label><input type='radio' name='remodel_before' value='no'>No</label>
+        <label><input class='radio-option' type='radio' name='remodel_before' value='yes'>Yes</label>
+      <label><input class='radio-option' type='radio' name='remodel_before' value='no'>No</label>
       </div>
+      <br>
 
     <div class='radio-group'>
-        <label class='form-label'>Will you need design services?<input type='radio' name='design-services' value='yes'>Yes</label>
-      <label><input type='radio' name='design-services' value='no'>No</label>
+        <label class='form-label'>Will you need design services?<input class='radio-option' type='radio' name='design-services' value='yes'>Yes</label>
+      <label><input class='radio-option' type='radio' name='design-services' value='no'>No</label>
+      <br>
 
-    <div class='radio-group'>
+    <div class='form-group'>
         <label class='form-label'>What year was your home built?<input type='text' name='year-built'></label>
       </div>      
 
-    <div class='radio-group'>
+    <div class='form-group'>
         <label class='form-label'>When would you like to start your project?<input type='date'></label>
       </div>   
       
@@ -127,7 +129,7 @@
         </label>
       </div>    
       
-    <div class='radio-group'>
+    <div class='form-group'>
         <label class='form-label'>How did you hear about us? * <select name='something' required>
           <option value="" disabled selected>--You better Select something--</option>
           <option value="referral">Referral</option>
@@ -159,6 +161,7 @@
 
   </div>
 </div>
+
 <button class='green-button final-stop' type='submit'>Submit Request</button>
 </form>
   </main>
