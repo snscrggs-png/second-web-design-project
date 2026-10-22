@@ -147,3 +147,38 @@ nav a {
 .final-stop {
   margin-bottom: 10%;
 }
+
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+
+  nav {
+    box-sizing: border-box;
+    padding: 0 10px;
+  }
+  nav a {
+    padding: 15px 10px;
+    font-size: 0.9rem;
+  }
+
+  .introduction {
+    padding: 60px 20px;
+    height: auto;
+    min-height: 40vh;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 40px 20px;
+    padding: 0 20px;
+  }
+
+  .text-box, .project-container {
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+
+}
